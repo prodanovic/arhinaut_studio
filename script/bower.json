@@ -1,0 +1,22 @@
+{
+  "name": "arhinaut",
+  "version": "0.1",
+  "homepage": "https://github.com/prodanovic/arhinaut_studio",
+  "authors": [
+    "prodanovic <tarzanka@gmail.com>"
+  ],
+  "description": "arhitecture site",
+  "main": "site.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fullpage.js": "~2.6.7",
+    "pagepiling.js": "~1.5.1"
+  }
+}
