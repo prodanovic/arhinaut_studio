@@ -1,0 +1,15 @@
+#landingPageBackground{
+    position: relative;
+    left: 0;
+    top: 0;
+}
+#landingPageBackground #backgroundImage{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+#landingPageBackground #logo{
+    position: absolute;
+    top: 30px;
+    left: 70px;
+}

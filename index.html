@@ -1,10 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Arhinaut Studio</title>
+    <meta name="author" content="Srdjan" />
+    <meta name="keywords"  content="architecture, belgrade, studio" />
 
-</body>
+    <link rel="stylesheet" type="text/css" href="script/bower_components/fullpage.js/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="script/bower_components/fullpage.js/jquery.fullPage.js"></script>
+    <script src="script/main.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+//                sectionsColor: ['#1bbc9b', 'whitesmoke'],
+                anchors: ['landingPage', 'ourWork'],
+                loopHorizontal : true,
+                onLeave: leavingSectionAction,
+//                afterLoad: afterSectionLoadAction,
+//                afterSlideLoad : afterSlideLoadAction,
+//                onSlideLeave: leavingSlideAction
+
+//                fixedElements: '#logo'
+            });
+
+        });
+    </script>
+
+</head>
+    <body>
+        <div id="fullpage">
+
+
+            <div class="section">
+                <div class="slide">
+                    <div id="landingPageBackground">
+                        <img id="backgroundImage" src="image/main_dolphins.jpg">
+                        <img id="logo" src="image/logo_star.png">
+                    </div>
+
+                </div>
+                <div class="slide">About us</div>
+            </div>
+
+
+            <div class="section">
+                ourWork
+                <div class="slide">Work 1</div>
+                <div class="slide">Work 2</div>
+            </div>
+
+        </div>
+
+    </body>
 </html>
