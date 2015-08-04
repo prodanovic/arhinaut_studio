@@ -11,6 +11,10 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="script/bower_components/fullpage.js/jquery.fullPage.js"></script>
+    <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+    <script type="text/javascript" src="script/bower_components/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="script/bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
+
     <script src="script/main.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
@@ -18,12 +22,16 @@
 //                sectionsColor: ['#1bbc9b', 'whitesmoke'],
                 anchors: ['landingPage', 'ourWork'],
                 loopHorizontal : true,
-                onLeave: leavingSectionAction,
+//                onLeave: leavingSectionAction,
 //                afterLoad: afterSectionLoadAction,
 //                afterSlideLoad : afterSlideLoadAction,
 //                onSlideLeave: leavingSlideAction
 
-                scrollingSpeed: 500
+                easing: 'easeInElastic',
+                easingcss3: 'ease',
+
+                scrollingSpeed: 1900
+
 //                fixedElements: '#logo'
             });
 
