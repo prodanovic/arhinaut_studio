@@ -16,7 +16,12 @@ afterSectionLoadAction = function(anchorLink, index){
 
     //using index
     if(index == 1){
-        alert("Section 1 ended loading");
+        //alert("Section 1 ended loading");
+        $(".fp-prev").hide();
+        $( ".fp-next").show();
+        //$("<h3 class='arrow-text'>About us</h3>").insertAfter(".fp-next");
+        $( ".fp-next" ).append( "<h3 class='arrow-text'>About us</h3>" );
+
     }
 
     //using anchorLink
@@ -29,8 +34,10 @@ afterSlideLoadAction = function( anchorLink, index, slideAnchor, slideIndex) {
     var loadedSlide = $(this);
 
     //first slide of the second section
-    if (anchorLink == 'secondPage' && slideIndex == 1) {
-        alert("First slide loaded");
+    if (index == 1 && slideIndex == 1) {
+        $(".fp-prev").show();
+        $( ".fp-prev" ).append( "<h3 class='arrow-text'>Back</h3>" );
+        $(".fp-next").hide();
     }
 
     //second slide of the second section (supposing #secondSlide is the

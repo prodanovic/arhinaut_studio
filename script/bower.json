@@ -17,6 +17,8 @@
   ],
   "dependencies": {
     "fullpage.js": "~2.6.7",
-    "pagepiling.js": "~1.5.1"
+    "pagepiling.js": "~1.5.1",
+    "jquery-ui":"~1.11.4",
+    "jquery":"~2.1.4"
   }
 }
