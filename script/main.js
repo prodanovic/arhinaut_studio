@@ -14,34 +14,44 @@ leavingSectionAction = function(index, nextIndex, direction){
 afterSectionLoadAction = function(anchorLink, index){
     var loadedSection = $(this);
 
-    //using index
     if(index == 1){
-        //alert("Section 1 ended loading");
-        $(".fp-prev").hide();
-        $( ".fp-next").show();
+
         //$("<h3 class='arrow-text'>About us</h3>").insertAfter(".fp-next");
-        $( ".fp-next" ).append( "<h3 class='arrow-text'>About us</h3>" );
+        if(!$(".arrow-text-next").length)
+            $(".fp-next").append("<h3 class='arrow-text arrow-text-next font'>About us</h3>" );
+        if(!$(".arrow-text-prev").length)
+            $(".fp-prev").append("<h3 class='arrow-text arrow-text-prev font'>Back</h3>");
+        if(!$(".arrow-text-down").length)
+            $(".arrowDown").append("<h3 class='arrow-text arrow-text-down font'>Projects</h3>" );
+
+        $(".fp-prev").hide();
 
     }
 
     //using anchorLink
     if(anchorLink == 'ourWork'){
-        alert("Section ourWork ended loading");
+        //alert("Section ourWork ended loading");
     }
 }
 
 afterSlideLoadAction = function( anchorLink, index, slideAnchor, slideIndex) {
     var loadedSlide = $(this);
 
-    //first slide of the second section
-    if (index == 1 && slideIndex == 1) {
-        $(".fp-prev").show();
-        $( ".fp-prev" ).append( "<h3 class='arrow-text'>Back</h3>" );
-        $(".fp-next").hide();
+    if (index == 1) {
+        $(".arrowUp").hide();
+        if(slideIndex == 0){
+            $(".fp-prev").hide();
+            $(".fp-next").show();
+            $.fn.fullpage.setKeyboardScrolling(false, 'left');
+            $.fn.fullpage.setKeyboardScrolling(true, 'right');
+        }
+        if(slideIndex == 1){
+            $(".fp-prev").show();
+            $(".fp-next").hide();
+            $.fn.fullpage.setKeyboardScrolling(false, 'right');
+            $.fn.fullpage.setKeyboardScrolling(true, 'left');
+        }
     }
-
-    //second slide of the second section (supposing #secondSlide is the
-    //anchor for the second slide
     if (index == 2 && slideIndex == 'secondSlide') {
         alert("Second slide loaded");
     }
@@ -60,3 +70,11 @@ leavingSlideAction = function( anchorLink, index, slideIndex, direction, nextSli
         alert("Going to slide 2! ");
     }
 }
+
+$('.arrowUp').click(function(){
+    $.fn.fullpage.moveSectionUp();
+});
+
+$('.arrowDown').click(function(){
+    $.fn.fullpage.moveSectionDown();
+});

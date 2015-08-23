@@ -1,4 +1,7 @@
-
+.font{
+    font-family: 'Architects Daughter', cursive;
+    color: whitesmoke;
+}
 
 #landingPageBackground{
     position: relative;
@@ -6,7 +9,6 @@
     top: 0;
 }
 #landingPageBackground #backgroundImage{
-
     /*position: relative;*/
     /*width: 100%;*/
     /*height: 768px;*/
@@ -16,24 +18,82 @@
 }
 #landingPageBackground #logo{
     position: absolute;
-    top: 5%;
-    left: 5%;
+    top: 1%;
+    left: 1%;
 }
-
-#title {
-    font-family: 'Architects Daughter', cursive;
+#landingPageBackground p{
+    font-size: 30px;
+    position:absolute;
+    top: 2%;
+    left: 24%;
+    text-align: center;
+}
+#landingPageBackground h1{
     font-size: 70px;
     position:absolute;
-    color: whitesmoke;
-    top: 5%;
-    right: 5%;
+    top: 9%;
+    left: 35%;
+}
+
+#aboutPage {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+#aboutPage h1{
+    font-size: 70px;
+    position:absolute;
+    top:3%;
+    left: 43%;
+    text-align: center;
+}
+
+#aboutPage h3{
+    width:700px;
+    font-size: 20px;
+    position:absolute;
+    top: 10%;
+    left: 25%;
+    text-align: center;
 }
 
 .arrow-text{
-    font-family: 'Architects Daughter', cursive;
     font-size: 20px;
-    color: whitesmoke;
     position: relative;
+}
+
+.arrow-text.arrow-text-next{
     top: 15px;
     right: 40px;
+}
+
+.arrow-text.arrow-text-prev{
+    top: 18px;
+    right: 13px;
+}
+
+.arrow-text.arrow-text-down{
+    top: -87px;
+    right: 42px;
+}
+
+.arrowUp, .arrowDown{
+    position:fixed;
+    z-index:99;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-left: -38px;
+    left: 50%;
+}
+.arrowDown{
+    bottom: 20px;
+    border-width: 38.5px 34px 0 38.5px;
+    border-color: #fff transparent transparent transparent;
+}
+.arrowUp{
+    top: 20px;
+    border-width: 0 38.5px 34px 38.5px;
+    border-color: transparent transparent #fff transparent;
 }
