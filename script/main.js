@@ -52,8 +52,9 @@ afterSlideLoadAction = function( anchorLink, index, slideAnchor, slideIndex) {
             $.fn.fullpage.setKeyboardScrolling(true, 'left');
         }
     }
-    if (index == 2 && slideIndex == 'secondSlide') {
-        alert("Second slide loaded");
+    if (index == 2) {
+        $(".arrowUp").show();
+        $(".arrowDown h3").hide();
     }
 }
 
