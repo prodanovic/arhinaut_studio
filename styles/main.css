@@ -2,6 +2,13 @@
     font-family: 'Architects Daughter', cursive;
     color: whitesmoke;
 }
+.content{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
 
 #landingPageBackground{
     position: relative;
