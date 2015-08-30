@@ -20,19 +20,19 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
-//                sectionsColor: ['#1bbc9b', 'whitesmoke'],
+                sectionsColor: [ 'gray','gray'],
                 anchors: ['landingPage', 'ourWork'],
                 loopHorizontal : true,
-//                onLeave: leavingSectionAction,
+                onLeave: leavingSectionAction,
                 afterLoad: afterSectionLoadAction,
                 afterSlideLoad : afterSlideLoadAction,
-//                onSlideLeave: leavingSlideAction
+                onSlideLeave: leavingSlideAction,
 
                 easing: 'easeInOutElastic',
 //                easingcss3: 'ease',
 
-                scrollingSpeed: 700
-
+                scrollingSpeed: 700,
+                menu:true
 //                fixedElements: '#logo'
             });
 
@@ -72,9 +72,32 @@
             <div class="section">
 
                 <div class="slide">
+                    <div class="div_background">
+                        <h1 class="font">Al Zubarah Museum</h1>
+
+                        <img class="content" src="content/1/0.jpg">
+                    </div>
+
+                </div>
+                <div class="slide">
+                    <img class="content" src="content/1/1.jpg">
+                </div>
+                <div class="slide">
+                    <img class="content" src="content/1/2.jpg">
+                </div>
+            </div>
+
+            <div class="section">
+
+                <div class="slide">
                     <img class="content" src="content/1/0.jpg">
                 </div>
-                <div class="slide">Work 2</div>
+                <div class="slide">
+                    <img class="content" src="content/1/1.jpg">
+                </div>
+                <div class="slide">
+                    <img class="content" src="content/1/2.jpg">
+                </div>
             </div>
 
         </div>
