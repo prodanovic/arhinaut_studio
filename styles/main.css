@@ -94,12 +94,12 @@
     left: 35%;
 }
 
-#aboutPage {
+#aboutCompany {
     position: relative;
     left: 0;
     top: 0;
 }
-#aboutPage h1{
+#aboutCompany h1{
     font-size: 70px;
     position:absolute;
     top:3%;
@@ -107,7 +107,7 @@
     text-align: center;
 }
 
-#aboutPage h3{
+#aboutCompany h3{
     width:700px;
     font-size: 20px;
     position:absolute;
