@@ -1,7 +1,15 @@
-.font{
-    font-family: 'Architects Daughter', cursive;
-    color: whitesmoke;
+@font-face {
+    font-family: 'KlavikaRegular';
+    src: url('/fonts/klavika_regular.otf') format('opentype');
+
 }
+
+.font{
+    /*font-family: 'Architects Daughter', cursive;*/
+    color: whitesmoke;
+    font-family: 'KlavikaRegular',Courier,"Courier New",monospace;
+}
+
 .darkblue{
     color: #003147;
 }
