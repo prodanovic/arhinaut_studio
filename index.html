@@ -24,7 +24,7 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
-                sectionsColor: [ 'black','black','black'],
+                sectionsColor: [ 'black','black','black','black','black'],
                 anchors: ['landingPage', 'ourWork'],
                 loopHorizontal : true,
                 onLeave: leavingSectionAction,
@@ -77,7 +77,7 @@
                     <div id="landingPageBackground">
                         <img class="content" src="image/avala.jpg">
                         <p class="font darkblue">Exploring new frontiers of architecture and design.<br>
-                            Our ideas change the world. <i class="material-icons md-48">pregnant_woman</i> <br>
+                            Our ideas change the world.<br>
                             We are </p>
                         <h1 class="font darkblue">Studio Arhinaut</h1>
                         <img id="logo" src="image/logo_glow.png">
@@ -101,11 +101,12 @@
             <div class="section">
                 <div class="slide">
                     <div class="div_background">
+                        <img class="first_content" src="content/1/0.jpg">
                         <h1 class="font">Umayad Palace Museum</h1>
                         <a href="index.html#ourWork/2">
                             <h3 class="font">DETAILS</h3>
                         </a>
-                        <img class="content" src="content/1/0.jpg">
+                        <div class="img_overlay"></div>
                     </div>
                 </div>
                 <div class="slide">
@@ -134,10 +135,26 @@
             </div>
 
         </div>
+        <div id="footer_quicklink">
+            <a href="#">
+                <i class="material-icons md-light">&#xE5D2;</i>
+                <div class="font">about</div>
+            </a>
+            <a href="#">
+                <i class="material-icons md-light">&#xE8F9;</i>
+                <div class="font">work</div>
+            </a>
+            <a href="#">
+                <i class="material-icons md-light">&#xE7FB;</i>
+                <div class="font">clients</div>
+            </a>
+            <a href="#">
+                <i class="material-icons md-light">&#xE0BE;</i>
+                <div class="font">contact</div>
+            </a>
+        </div>
         <div class="arrowUp"></div>
         <div class="arrowDown"></div>
-        <div class="footer_quicklink">
 
-        </div>
     </body>
 </html>
