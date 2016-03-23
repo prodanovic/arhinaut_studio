@@ -1,13 +1,14 @@
-@font-face {
-    font-family: 'KlavikaRegular';
-    src: url('/fonts/klavika_regular.otf') format('opentype');
-
+* {
+    font-family: 'Open Sans';
 }
 
-.font{
-    /*font-family: 'Architects Daughter', cursive;*/
+a {
+    text-decoration: none;
+}
+
+.font {
+    font-weight: 300;
     color: whitesmoke;
-    font-family: 'KlavikaRegular',Courier,"Courier New",monospace;
 }
 
 .darkblue{
@@ -133,14 +134,18 @@
     font-size: 30px;
     position: absolute;
     top: 2%;
-    left: 24%;
     text-align: center;
+    width: 100%;
+    font-weight: 300;
+
 }
 #landingPageBackground h1{
     font-size: 70px;
     position:absolute;
     top: 17%;
-    left: 35%;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
 }
 
 #aboutCompany {
@@ -168,21 +173,27 @@
 .arrow-text{
     font-size: 20px;
     position: relative;
+    color: white;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1em;
 }
 
 .arrow-text.arrow-text-next{
     top: 15px;
     right: 40px;
+    margin-top: 25px;
 }
 
 .arrow-text.arrow-text-prev{
-    top: 18px;
-    right: 13px;
+    top: 28px;
 }
 
 .arrow-text.arrow-text-down{
-    top: -87px;
+    top: -78px;
     right: 42px;
+    width: 76px;
+    text-align: center;
 }
 
 .arrowUp, .arrowDown{
@@ -191,15 +202,41 @@
     cursor: pointer;
     width: 0;
     height: 0;
-    border-style: solid;
+    /*border-style: solid;*/
     margin-left: -38px;
     left: 50%;
+
+
 }
+
+@keyframes arrowUp {
+    from { bottom: -20px }
+    to { bottom: 20px }
+}
+
 .arrowDown{
     bottom: 20px;
-    border-width: 38.5px 34px 0 38.5px;
-    border-color: #fff transparent transparent transparent;
+    /*border-width: 38.5px 34px 0 38.5px;*/
+    /*border-color: #fff transparent transparent transparent;*/
     animation: pulse 3s ease running;
+    -webkit-animation: pulse 3s ease running;
+    -moz-animation: pulse 3s ease running;
+
+    border-top: 2px solid whitesmoke;
+    border-left: 2px solid whitesmoke;
+    transform: rotate(-145deg) skew(-20deg);
+
+    position: absolute;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 12px; /*set the size for arrow*/
+    width: 4em;
+    height: 4em;
+    margin-top: -2em;
+
+    animation-name: arrowUp;
+    animation-duration: 2s;
+}
 }
 @keyframes pulse {
     0%{
@@ -220,7 +257,7 @@
     bottom: 1%;
     right: 1%;
     height: 39px;
-    width: 379px;
+    /*width: 379px;*/
 }
 #footer_quicklink div{
     display: inline-flex;
@@ -229,6 +266,20 @@
     text-transform: uppercase;
     text-decoration: none;
 }
+
+#footer_quicklink a {
+    margin-left: 10px;
+    float: left;
+    display: block;
+}
+
+#footer_quicklink a div{
+    font-size: 0.8em;
+    float: left;
+    margin-top: 3px;
+}
 #footer_quicklink i{
     margin-right: 2px;
+    float: left;
+    display: block;
 }

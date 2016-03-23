@@ -18,12 +18,12 @@ afterSectionLoadAction = function(anchorLink, index){
         $(".arrowUp").hide();
 
         //$("<h3 class='arrow-text'>About us</h3>").insertAfter(".fp-next");
-        if(!$(".arrow-text-next").length)
-            $(".fp-next").append("<h3 class='arrow-text arrow-text-next font'>About us</h3>" );
-        if(!$(".arrow-text-prev").length)
-            $(".fp-prev").append("<h3 class='arrow-text arrow-text-prev font'>Back</h3>");
+        //if(!$(".arrow-text-next").length)
+        //    $(".fp-next").append("<h3 class='arrow-text arrow-text-next font'>About</h3>" );
+        //if(!$(".arrow-text-prev").length)
+        //    $(".fp-prev").append("<h3 class='arrow-text arrow-text-prev font'>Back</h3>");
         if(!$(".arrow-text-down").length)
-            $(".arrowDown").append("<h3 class='arrow-text arrow-text-down font'>Projects</h3>" );
+            $(".arrowDown").append("<h3 class='arrow-text arrow-text-down font'>Projects</h3>");
         $(".fp-prev h3").show();
         $(".fp-next h3").show();
         $(".arrowDown h3").show();
