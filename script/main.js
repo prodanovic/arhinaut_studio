@@ -18,12 +18,13 @@ afterSectionLoadAction = function(anchorLink, index){
         $(".arrowUp").hide();
 
         //$("<h3 class='arrow-text'>About us</h3>").insertAfter(".fp-next");
-        //if(!$(".arrow-text-next").length)
-        //    $(".fp-next").append("<h3 class='arrow-text arrow-text-next font'>About</h3>" );
-        //if(!$(".arrow-text-prev").length)
-        //    $(".fp-prev").append("<h3 class='arrow-text arrow-text-prev font'>Back</h3>");
+        if(!$(".arrow-text-next").length)
+            $(".fp-next").after("<h3 class='arrow-text arrow-text-next font'>About</h3>" );
+        if(!$(".arrow-text-prev").length)
+            $(".fp-prev").append("<h3 class='arrow-text arrow-text-prev font'>Back</h3>");
         if(!$(".arrow-text-down").length)
-            $(".arrowDown").append("<h3 class='arrow-text arrow-text-down font'>Projects</h3>");
+            $(".arrowDown").before("<h3 class='arrow-text arrow-text-down font'>Projects</h3>");
+
         $(".fp-prev h3").show();
         $(".fp-next h3").show();
         $(".arrowDown h3").show();
@@ -32,9 +33,9 @@ afterSectionLoadAction = function(anchorLink, index){
         $(".fp-prev").show();
         $(".fp-next").show();
         $(".arrowUp").show();
-        $(".fp-prev h3").hide();
+        $(".arrow-text-next").hide();
         $(".fp-next h3").hide();
-        $(".arrowDown h3").hide();
+        $(".arrow-text-down").hide();
 
         $.fn.fullpage.setKeyboardScrolling(true, 'left');
         $.fn.fullpage.setKeyboardScrolling(true, 'right');
@@ -54,13 +55,13 @@ afterSlideLoadAction = function( anchorLink, index, slideAnchor, slideIndex) {
         $(".arrowDown h3").show();
         if(slideIndex == 0){
             $(".fp-prev").hide();
-            $(".fp-next").show();
+            $(".fp-next, .arrow-text-next").show();
             $.fn.fullpage.setKeyboardScrolling(false, 'left');
             $.fn.fullpage.setKeyboardScrolling(true, 'right');
         }
         if(slideIndex == 1){
             $(".fp-prev").show();
-            $(".fp-next").hide();
+            $(".fp-next, .arrow-text-next").hide();
             $.fn.fullpage.setKeyboardScrolling(false, 'right');
             $.fn.fullpage.setKeyboardScrolling(true, 'left');
         }
