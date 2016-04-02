@@ -240,6 +240,8 @@ a {
     border-top: 2px solid whitesmoke;
     border-left: 2px solid whitesmoke;
 
+
+
     position: absolute;
     overflow: hidden;
     display: inline-block;
@@ -248,8 +250,10 @@ a {
     height: 3em;
     animation-name: arrowUp;
     opacity: 0.7;
+}
 
-
+.arrow-shine {
+    border-color: yellow !important;
 }
 
 @keyframes arrowUp {
