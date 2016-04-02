@@ -25,16 +25,16 @@ afterSectionLoadAction = function(anchorLink, index){
         if(!$(".arrow-text-down").length)
             $(".arrowDown").before("<h3 class='arrow-text arrow-text-down font'>Projects</h3>");
 
-        $(".fp-prev h3").show();
-        $(".fp-next h3").show();
-        $(".arrowDown h3").show();
+        $(".arrow-text-next").show();
+        $(".fp-prev, .arrow-text-prev").hide();
+        $(".arrow-text-down").show();
     }
     else {
         $(".fp-prev").show();
         $(".fp-next").show();
         $(".arrowUp").show();
         $(".arrow-text-next").hide();
-        $(".fp-next h3").hide();
+        $(".arrow-text-prev").hide();
         $(".arrow-text-down").hide();
 
         $.fn.fullpage.setKeyboardScrolling(true, 'left');
@@ -62,13 +62,13 @@ afterSlideLoadAction = function( anchorLink, index, slideAnchor, slideIndex) {
         $(".arrowUp").hide();
         $(".arrowDown h3").show();
         if(slideIndex == 0){
-            $(".fp-prev").hide();
+            $(".fp-prev, .arrow-text-prev").hide();
             $(".fp-next, .arrow-text-next").show();
             $.fn.fullpage.setKeyboardScrolling(false, 'left');
             $.fn.fullpage.setKeyboardScrolling(true, 'right');
         }
-        if(slideIndex == 1){
-            $(".fp-prev").show();
+        if(slideIndex > 0){
+            $(".fp-prev, .arrow-text-prev").show();
             $(".fp-next, .arrow-text-next").hide();
             $.fn.fullpage.setKeyboardScrolling(false, 'right');
             $.fn.fullpage.setKeyboardScrolling(true, 'left');

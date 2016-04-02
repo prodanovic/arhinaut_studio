@@ -202,7 +202,7 @@ a {
 
 @keyframes textUp {
     from { bottom: -20px }
-    to { bottom: 40px }
+    to { bottom: 28px }
 }
 
 .arrow-text.arrow-text-next{
@@ -228,7 +228,7 @@ a {
     animation-name: textUp;
     animation-duration: 2s;
     left: 50%;
-    margin-left: -6.3%;
+    margin-left: -6.5%;
 }
 
 .arrowUp, .arrowDown{
