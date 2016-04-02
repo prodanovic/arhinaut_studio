@@ -55,6 +55,7 @@ html.fp-enabled,
     vertical-align: middle;
     width: 100%;
     height: 100%;
+    position: relative;
 }
 .fp-slidesContainer {
     float: left;
@@ -72,42 +73,48 @@ html.fp-enabled,
     -webkit-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
+
+    opacity: 0.7;
 }
 .fp-controlArrow.fp-prev {
-    left: 15px;
-    width: 0;
-    /*border-width: 38.5px 34px 38.5px 0;*/
-    /*border-color: transparent #fff transparent transparent;*/
+    left: 2%;
 
-    border-top: 2px solid #a9a9a9;
-    border-left: 2px solid #a9a9a9;
+    border-top: 2px solid whitesmoke;
+    border-left: 2px solid whitesmoke;
     transform: rotate(-54deg) skew(-20deg);
 
     position: absolute;
     overflow: hidden;
     display: inline-block;
     font-size: 12px; /*set the size for arrow*/
-    width: 4em;
-    height: 4em;
+    width: 3em;
+    height: 3em;
     margin-top: -2em;
     top: 50%;
 }
+
+@keyframes arrowLeft {
+    from { right: -3% }
+    to { right: 2% }
+}
+
 .fp-controlArrow.fp-next {
-    right: 3%;
-    /*border-width: 38.5px 0 38.5px 34px;*/
-    /*border-color: transparent transparent transparent #fff;*/
-    border-top: 2px solid #a9a9a9;
-    border-right: 2px solid #a9a9a9;
+    right: 2%;
+    border-top: 2px solid whitesmoke;
+    border-right: 2px solid whitesmoke;
     transform: rotate(54deg) skew(20deg);
 
     position: absolute;
     overflow: hidden;
     display: inline-block;
     font-size: 12px; /*set the size for arrow*/
-    width: 4em;
-    height: 4em;
+    width: 3em;
+    height: 3em;
     margin-top: -2em;
     top: 50%;
+
+    animation-name: arrowLeft;
+    animation-duration: 2s;
 }
 .fp-scrollable {
     overflow: scroll;
@@ -144,8 +151,8 @@ html.fp-enabled,
 }
 #fp-nav ul,
 .fp-slidesNav ul {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 #fp-nav ul li,
 .fp-slidesNav ul li {
@@ -176,7 +183,7 @@ html.fp-enabled,
     width: 12px;
     margin: -6px 0 0 -6px;
     border-radius: 100%;
- }
+}
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
     border-radius: 50%;

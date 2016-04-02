@@ -21,7 +21,7 @@ afterSectionLoadAction = function(anchorLink, index){
         if(!$(".arrow-text-next").length)
             $(".fp-next").after("<h3 class='arrow-text arrow-text-next font'>About</h3>" );
         if(!$(".arrow-text-prev").length)
-            $(".fp-prev").append("<h3 class='arrow-text arrow-text-prev font'>Back</h3>");
+            $(".fp-prev").after("<h3 class='arrow-text arrow-text-prev font'>Back</h3>");
         if(!$(".arrow-text-down").length)
             $(".arrowDown").before("<h3 class='arrow-text arrow-text-down font'>Projects</h3>");
 
@@ -41,6 +41,14 @@ afterSectionLoadAction = function(anchorLink, index){
         $.fn.fullpage.setKeyboardScrolling(true, 'right');
 
     }
+
+    $.each($(".section:nth-child(" + index + ") img"), function(key, val) {
+        if (val.hasAttribute('data-img-src')) {
+            $(val).attr('src', $(val).attr('data-img-src'));
+        }
+    });
+
+
     //using anchorLink
     if(anchorLink == 'ourWork'){
         //alert("Section ourWork ended loading");
