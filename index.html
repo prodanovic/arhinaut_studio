@@ -27,7 +27,7 @@
         $(document).ready(function() {
             $('#fullpage').fullpage({
                 sectionsColor: [ 'black','black','black','black','black'],
-                anchors: ['landingPage', 'ourWork'],
+                anchors: ['landingPage', 'zoo1','zoo2'],
                 loopHorizontal : true,
                 onLeave: leavingSectionAction,
                 afterLoad: afterSectionLoadAction,
@@ -48,55 +48,200 @@
 </head>
 <body>
 <div id="fullpage">
-    <!--<div class="section">-->
-    <!--<div class="slide">-->
-    <!--<div id="landingPageBackground">-->
-    <!--<img id="backgroundImage" src="image/bckg_old.jpg">-->
-    <!--<p class="font">Exploring new frontiers of architecture and design.<br>-->
-    <!--Our ideas change the world.<br>-->
-    <!--We are </p>-->
-    <!--<h1 class="font">Studio Arhinaut</h1>-->
-    <!--<img id="logo" src="image/logo_glow.png">-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--<div class="slide">-->
-    <!--<div id="aboutCompany">-->
-    <!--<img src="image/bckg_old.jpg">-->
-    <!--<h1 class="font">About</h1>-->
-    <!--<h3 class="font">Studio Arhinaut was established in 2004, and since then it engaged a number of architects,-->
-    <!--designers and 3D artists to collaborate on exciting projects in the field of architecture,-->
-    <!--engineering and design.</p></p>-->
-    <!--The wide range of successfully completed projects has taught us to be prepared-->
-    <!--for anything and to always deliver beyond our clients' expectations, be it Al Zubarah museum in the desert,-->
-    <!--the naturalist museum in Belgrade or the design of the first Arabic Lego set for the Queen Latifa.-->
-    <!--</h3>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</div>-->
 
     <div class="section">
         <div class="slide">
             <div id="landingPageBackground">
-                <img class="content" src="image/avala.jpg">
-                <p class="font darkblue">Exploring new frontiers of architecture and design.<br>
-                    Our ideas change the world.<br>
-                    We are </p>
+                <img class="content_landing" src="content/landing/landing.jpg">
+
                 <h1 class="font darkblue">Studio Arhinaut</h1>
-                <img id="logo" src="image/logo_glow.png">
+
             </div>
         </div>
         <div class="slide">
             <div id="aboutCompany">
-                <img data-img-src="image/bckg_old.jpg">
-                <h1 class="font">About</h1>
-                <h3 class="font">Studio Arhinaut was established in 2004, and since then it engaged a number of architects,
-                    designers and 3D artists to collaborate on exciting projects in the field of architecture,
-                    engineering and design.</p></p>
-                    The wide range of successfully completed projects has taught us to be prepared
-                    for anything and to always deliver beyond our clients' expectations, be it Al Zubarah museum in the desert,
-                    the naturalist museum in Belgrade or the design of the first Arabic Lego set for the Queen Latifa.
+                <img class="content" data-img-src="content/landing/about.jpg">
+
+                <h1 class="font darkblue about_us">
+                    ABOUT<br/>
+                    US:
+                </h1>
+                <h2>
+                    <p class="font darkblue about_text">
+                        Arhinaut, a company based in Belgrade, Serbia, is engaged in all aspects
+                        architecture, engineering, design and consulting services by combining it contemporary
+                        methods of modern architecture.
+                        <br/><br/>
+                        Unconventional ideas along with various forms of architectural and construction solutions is
+                        what makes Arhinaut recognizable and unique.
+                        <br/><br/>
+                        The company covers a wide range of civil and urban design projects with their main team in Belgrade
+                        as well as a wide network of companies, associates and consultants of different profiles in the country
+                        and abroad.
+                    </p>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="slide">
+            <div class="div_background">
+                <img class="first_content" src="content/zoo/bg/1.jpg">
+
+                <div class="project-title">
+                    <h1 class="font">
+                        BIRD TOWN EXHIBIT
+                        <br/>
+                        <div class="sub_text_zoo">
+                            Reconstruction of an old part of the Zoo
+                        </div>
+
+                    </h1>
+                    <a href="index.html#zoo1/8" class="font">
+                        DETAILS
+                    </a>
+                </div>
+
+
+                <div class="img_overlay"></div>
+            </div>
+        </div>
+        <div class="slide">
+            <img class="content" data-img-src="content/zoo/bg/2.jpg">
+        </div>
+        <div class="slide">
+            <img class="content" data-img-src="content/zoo/bg/3.jpg">
+        </div>
+        <div class="slide">
+            <img class="content" data-img-src="content/zoo/bg/4.jpg">
+        </div>
+        <div class="slide">
+            <img class="content" data-img-src="content/zoo/bg/5.jpg">
+        </div>
+        <div class="slide">
+            <img class="content" data-img-src="content/zoo/bg/6.jpg">
+        </div>
+        <div class="slide">
+            <img class="content" data-img-src="content/zoo/bg/7.jpg">
+        </div>
+        <div class="slide">
+            <img class="content" data-img-src="content/zoo/bg/8.jpg">
+        </div>
+
+        <div class="slide">
+            <img class="content" data-img-src="content/zoo/bg/9.jpg">
+            <div class="div_about">
+                <h3 class="font">
+                    <div class="title_about_text">
+                        BELGRADE <br/>
+                        PENGUINARIUM<br/>
+                        BELGRADE CITY ZOO<br/>
+                    </div>
+
+                    LOCATION<br/>
+                    <div class="sub_text_zoo">Belgrade fortress</div>
+                    <div class="sub_text_zoo">Belgrade, Serbia</div>
+                    <br/>
+                    SERVICES<br/>
+                    <div class="sub_text_zoo">Concept design</div>
+                    <div class="sub_text_zoo">detailed design</div>
+                    <div class="sub_text_zoo">construction plans</div>
+                    <br/>
+                    PROJECT DETAILS<br/>
+                    <div class="sub_text_zoo">Penguin exhibit covers roughly 500</div>
+                    <div class="sub_text_zoo">m2 with two outdoor and one</div>
+                    <div class="sub_text_zoo">indoor pool (total volume of 300 m3),</div>
+                    <div class="sub_text_zoo">enclosure for penguins, water and</div>
+                    <div class="sub_text_zoo">land connection between open and</div>
+                    <div class="sub_text_zoo">closed areas. Careful architectural</div>
+                    <div class="sub_text_zoo">and climate design is providing conditions</div>
+                    <div class="sub_text_zoo">for accommodating different</div>
+                    <div class="sub_text_zoo">penguin species. Project includes</div>
+                    <div class="sub_text_zoo">complete landscape designin total</div>
+                    <div class="sub_text_zoo">of 1000 m2, with cafe on top of the</div>
+                    <div class="sub_text_zoo">closed part of the exhibit.</div>
+                    <br/>
+                    PROJECT STATUS<br/>
+                    <div class="sub_text_zoo">Under construction</div>
+                    <div class="sub_text_zoo">Completion date:</div>
+                    <div class="sub_text_zoo">June 2016.</div>
                 </h3>
             </div>
+
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="slide">
+            <div class="div_background">
+                <img class="first_content" src="content/zoo/umayad/1.jpg">
+
+                <div class="project-title">
+                    <h1 class="font">
+                        RAWDAT AL FARAS FARM
+                        <br/>
+                        <div class="sub_text_zoo">
+                            Animal
+                            Containement Center
+                        </div>
+
+                    </h1>
+                    <a href="index.html#zoo2/3" class="font">
+                        DETAILS
+                    </a>
+                </div>
+
+
+                <div class="img_overlay"></div>
+            </div>
+        </div>
+        <div class="slide">
+            <img class="content" data-img-src="content/zoo/umayad/2.jpg">
+        </div>
+        <div class="slide">
+            <img class="content" data-img-src="content/zoo/umayad/3.jpg">
+        </div>
+        <div class="slide">
+            <img class="content" data-img-src="content/zoo/umayad/4.jpg">
+            <div class="div_about">
+                <div class="font div_about_text">
+                    <div class="title_about_text">
+                        ANIMAL<br/>
+                        CONTAINEMENT<br/>
+                        CENTER<br/>
+                    </div>
+
+                    CLIENT<br/>
+                    <div class="sub_text_zoo">ASHGHAL – Public Work Authority</div>
+                    <div class="sub_text_zoo">MEDGULF CONSTRUCTION (W.L.L)</div>
+                    <br/>
+                    LOCATION<br/>
+                    <div class="sub_text_zoo">Rawdar Al Faras Farm</div>
+                    <div class="sub_text_zoo">Quatar, near Doha</div>
+                    <br/>
+                    SERVICES<br/>
+                    <div class="sub_text_zoo">Master Plan Design</div>
+                    <div class="sub_text_zoo">Concept Design</div>
+                    <div class="sub_text_zoo">Detailed design</div>
+                    <div class="sub_text_zoo">Construction plans</div>
+                    <br/>
+                    PROJECT DETAILS<br/>
+                    <div class="sub_text_zoo">Animal containment center covers</div>
+                    <div class="sub_text_zoo">area of 110 000 m2, which includes</div>
+                    <div class="sub_text_zoo">70 separate animal areas, veterinary</div>
+                    <div class="sub_text_zoo">hospital, central food preparation area,</div>
+                    <div class="sub_text_zoo">storages, administrative buildings,</div>
+                    <div class="sub_text_zoo">staff accommodation building</div>
+                    <div class="sub_text_zoo">andvillas. Center accommodates</div>
+                    <div class="sub_text_zoo">175 different animal species.</div>
+                    <br/>
+                    PROJECT STATUS<br/>
+                    <div class="sub_text_zoo">COMPLETED IN 2015.</div>
+                    <br/>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -131,7 +276,7 @@
     <div class="section">
         <div class="slide">
             <div class="div_background">
-                <img class="first_content" src="content/4/4F.png">
+                <img class="first_content" src="content/4/4F.jpg">
 
                 <div class="project-title">
                     <h1 class="font">Something Awesome</h1>
@@ -185,8 +330,8 @@
 </div>
 <div id="footer_quicklink">
     <a href="#">
-        <i class="material-icons md-light">&#xE5D2;</i>
-        <div class="font">about</div>
+        <i class="material-icons md-dark">&#xE5D2;</i>
+        <div class="font darkblue">about</div>
     </a>
     <a href="#">
         <i class="material-icons md-light">&#xE8F9;</i>

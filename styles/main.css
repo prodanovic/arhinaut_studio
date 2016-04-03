@@ -15,44 +15,39 @@ a {
 .darkblue{
     color: #003147;
 }
-/*.overlay{*/
-/*position: fixed;*/
-/*top: 0;*/
-/*left: 0;*/
-/*z-index: 100;*/
-/*background-color: rgba(0,0,0,0.5);*/
-/*height: 100%;*/
-/*width: 100%;*/
-/*}*/
-/*.project_title{*/
-/*color: whitesmoke;*/
-/*display: inline-block;*/
-/*background: #000;*/
-/*padding: 17px 20px 17px;*/
-/*font-size: 50px;*/
-/*text-align: center;*/
-/*margin-left: 30%;*/
-/*margin-top: 20%;*/
-/*z-index: 110;*/
-/*}*/
-.project_details{
-    /*font-weight: 400;*/
-    /*font-style: normal;*/
-    /*position: absolute;*/
-    /*left: 0;*/
-    /*bottom: -40px;*/
-    /*letter-spacing: 0em;*/
-    /*font-size: 14px;*/
-    /*padding: 8px;*/
-    /*background: #fff;*/
-    /*color: #000;*/
-    /*line-height: 1em;*/
-    /*text-transform: uppercase;*/
+.about_text{
+    font-weight: 100;
+    font-size: 12px;
+    position: absolute;
+    top: 45%;
+    width: 20%;
+    text-align: justify;
+    left: 47%;
+
 }
+.title_about_text{
+    padding-bottom: 1em;
+}
+.about_us {
+    font-size: 70px;
+    position: absolute;
+    top: 11%;
+    text-align: justify;
+    width: 100%;
+    left: 47%;
+
+}
+
 .content{
     /*display: block;*/
     /*margin-left: auto;*/
     /*margin-right: auto ;*/
+    height: 100%;
+    width: 100%;
+}
+.content_landing{
+    top: 0%;
+    left: 0%;
     height: 100%;
     width: 100%;
 }
@@ -62,6 +57,9 @@ a {
     /*margin-right: auto ;*/
     height: 100%;
     width: 100%;
+}
+.sub_text_zoo{
+    font-size: 0.5em;
 }
 .div_background img{
     position: relative;
@@ -92,7 +90,7 @@ a {
 .div_background h1{
     background: #000;
     color: whitesmoke;
-    text-align: center;
+    text-align: justify;
     padding: 17px 20px 17px;
     margin: 0;
 }
@@ -111,18 +109,20 @@ a {
 
 .div_about {
     width: 35%;
-    padding: 2%;
+    padding-left: 2%;
     position: absolute;
     right: 8%;
-    top: 15%;
+    top: 5%;
     background: black;
     opacity: 0.7;
 }
 
-.div_about h3{
+.div_about_text{
     font-size: 20px;
     display: inline-block;
     /*text-align: center;*/
+    margin-top: 12px;
+    margin-bottom: -15px;
     color: floralwhite;
 }
 #landingPageBackground{
@@ -130,19 +130,7 @@ a {
     left: 0;
     top: 0;
 }
-#backgroundImage{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    /*opacity: 1;*/
-    /*top: 0;*/
-    /*left: 0;*/
-}
-#landingPageBackground #logo{
-    position: absolute;
-    top: 1%;
-    left: 1%;
-}
+
 #landingPageBackground p{
     font-size: 30px;
     position: absolute;
@@ -152,40 +140,17 @@ a {
     font-weight: 300;
 
 }
-#landingPageBackground h1{
-    font-size: 70px;
-    position:absolute;
-    top: 17%;
-    width: 100%;
-    text-align: center;
-    font-weight: 400;
-}
+
 
 #aboutCompany {
     position: relative;
     left: 0;
     top: 0;
 }
-#aboutCompany h1{
-    font-size: 70px;
-    position:absolute;
-    top: 3%;
-    text-align: center;
-    width: 100%;
-}
 
-#aboutCompany h3{
-    width:40%;
-    font-size: 20px;
-    position:absolute;
-    top: 10%;
-    text-align: center;
-    left: 50%;
-    margin-left: -20%;
-}
 
 .arrow-text{
-    color: whitesmoke;
+    color: black;
     font-weight: 300;
     font-size: 1em;
     line-height: 1em;
@@ -237,10 +202,8 @@ a {
     margin-left: -38px;
     left: 50%;
 
-    border-top: 2px solid whitesmoke;
-    border-left: 2px solid whitesmoke;
-
-
+    border-top: 2px solid black;
+    border-left: 2px solid black;
 
     position: absolute;
     overflow: hidden;

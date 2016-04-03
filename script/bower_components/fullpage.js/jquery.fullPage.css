@@ -79,8 +79,8 @@ html.fp-enabled,
 .fp-controlArrow.fp-prev {
     left: 2%;
 
-    border-top: 2px solid whitesmoke;
-    border-left: 2px solid whitesmoke;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
     transform: rotate(-54deg) skew(-20deg);
 
     position: absolute;
@@ -100,8 +100,8 @@ html.fp-enabled,
 
 .fp-controlArrow.fp-next {
     right: 2%;
-    border-top: 2px solid whitesmoke;
-    border-right: 2px solid whitesmoke;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
     transform: rotate(54deg) skew(20deg);
 
     position: absolute;

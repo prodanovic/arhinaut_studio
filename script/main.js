@@ -82,9 +82,9 @@ leavingSlideAction = function( anchorLink, index, slideIndex, direction, nextSli
 
 
     //leaving the 3rd slide of the 2nd Section to the left
-    if(index == 2 && slideIndex == 1 && direction == 'left'){
-        alert("Going to slide 2! ");
-    }
+    //if(index == 2 && slideIndex == 1 && direction == 'left'){
+    //    alert("Going to slide 2! ");
+    //}
 }
 
 $('.arrowUp').click(function(){
