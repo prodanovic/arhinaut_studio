@@ -45,6 +45,12 @@ a {
     height: 100%;
     width: 100%;
 }
+.wide_image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
 .content_landing{
     top: 0%;
     left: 0%;
@@ -108,7 +114,7 @@ a {
 }
 
 .div_about {
-    width: 35%;
+    width: 30%;
     padding-left: 2%;
     position: absolute;
     right: 8%;
