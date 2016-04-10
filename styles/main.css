@@ -266,6 +266,20 @@ a {
     display: block;
 }
 
+#footer_quicklink > .submenu {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    font-size: 12px;
+    color: black;
+    margin-left: 45px;
+    list-style-type: none;
+}
+
+#footer_quicklink > .submenu a {
+    color: #000000;
+}
+
 #footer_quicklink a div{
     font-size: 0.8em;
     float: left;
