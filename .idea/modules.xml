@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/arhinaut_studio.iml" filepath="$PROJECT_DIR$/.idea/arhinaut_studio.iml" />
       <module fileurl="file://$PROJECT_DIR$/arhinaut_studio.iml" filepath="$PROJECT_DIR$/arhinaut_studio.iml" />
     </modules>
   </component>
 </project>
+

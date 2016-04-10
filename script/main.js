@@ -17,6 +17,11 @@ afterSectionLoadAction = function(anchorLink, index){
         $(".fp-prev").hide();
         $(".arrowUp").hide();
 
+        var height = $(window).height()
+
+        $("#landing-bg").width(height);
+        $("#landing-bg").height(height);
+
         //$("<h3 class='arrow-text'>About us</h3>").insertAfter(".fp-next");
         if(!$(".arrow-text-next").length)
             $(".fp-next").after("<h3 class='arrow-text arrow-text-next font'>About</h3>" );
